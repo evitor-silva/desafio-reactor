@@ -10,13 +10,14 @@ repositories {
 }
 
 ext{
-    junitVersion = '5.8.2'
-    reactorVersion = '3.4.21'
+    junitVersion = '6.1.0'
+    reactorVersion = '3.8.5'
 }
 
 dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api:$junitVersion"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
     implementation "io.projectreactor:reactor-core:$reactorVersion"
     testImplementation "io.projectreactor:reactor-test:$reactorVersion"
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
